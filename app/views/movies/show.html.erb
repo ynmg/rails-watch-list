@@ -1,0 +1,6 @@
+<div class="list-group-item">
+  <h1><%= @movie.title %></h1>
+  <%= image_tag(@movie.poster_url, alt: @movie.title, style: "width: 350px") %>
+  <p><strong><%= @movie.overview %></strong></p>
+  <p>Rating: <%= @movie.rating %></p>
+</div>

@@ -1,0 +1,13 @@
+<h1>Watch Lists</h1>
+<%= link_to "Add", new_list_path %>
+<hr>
+<div class="container">
+  <div class="list-group">
+    <ul>
+      <% @lists.each do |list| %>
+        <div class="list-group-item">
+          <li><h1><%= link_to list.name, list_path(list) %></li>
+        </div>
+      <% end %>
+  </div>
+</div>

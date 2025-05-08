@@ -1,0 +1,15 @@
+<h1>Show one list</h1>
+<div class="list-group">
+  <% @list_of_movies.movies.each do |movie| %>
+    <div class="list-group-item">
+      <%= movie.title %>
+    </div>
+  <% end %>
+</div>
+
+<ul>
+  <% @bookmarks.each do |bookmark|%>
+    <li><%= bookmark.movie.title%>
+  <% end %>
+<hr>
+<%= link_to "Back", lists_path %>
